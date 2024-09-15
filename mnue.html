@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+   <link rel="stylesheet" href="style.css">
+   <title>Arabian Nights Restaurant</title>
+</head>
+<body>
+    <header>
+        <div class="header">
+    <a  class="logo">Arabian Nights</a>
+    <nav>
+    
+    <div class="header-right">
+    <a href="index.html">HOME</a>
+    <a href="mnue.html">MENU</a>
+     <a href="contact.html">CONTACT US </a>
+    
+    </nav>
+    </div>
+     
+    </header>
+   
+    <div class="container">
+        <div class="row">
+            <div class="card">
+                <img src="mnue/dawale.jpg" alt="Meal 1" id="meal1-img">
+                <h5>Grape leaves</h5>
+                <p>Grape leaves stuffed with rice .</p>
+                <p class="price" onmouseover="increaseFontSize(this)" onmouseout="resetFontSize(this)">10.99 JD</p>
+                <button class="btn" onclick="chooseMeal('meal1-img')">Choose</button>
+            </div>
+            <div class="card">
+                <img src="mnue/masaweee.jpg" alt="Meal 2" id="meal2-img">
+                <h5>Grills</h5>
+                <p>Grilled meat, chicken and kebab.</p>
+                <p class="price" onmouseover="increaseFontSize(this)" onmouseout="resetFontSize(this)">12.99 JD</p>
+                <button class="btn" onclick="chooseMeal('meal2-img')">Choose</button>
+            </div>
+            <div class="card">
+                <img src="mnue/kubaz.jpg" alt="Meal 3" id="meal3-img">
+                <h5>pastries</h5>
+                <p>Cheese, meat and thyme pastries.</p>
+                <p class="price" onmouseover="increaseFontSize(this)" onmouseout="resetFontSize(this)">5.99 JD</p>
+                <button class="btn" onclick="chooseMeal('meal3-img')">Choose</button>
+            </div>
+            <div class="card">
+                <img src="mnue/fash.jpg" alt="Meal 4" id="meal4-img">
+                <h5>Fish</h5>
+                <p>Fish with Arabic spices.</p>
+                <p class="price" onmouseover="increaseFontSize(this)" onmouseout="resetFontSize(this)">9 JD</p>
+                <button class="btn" onclick="chooseMeal('meal4-img')">Choose</button>
+            </div>
+            <div class="card">
+                <img src="mnue/freqa.jpg" alt="Meal 5" id="meal5-img">
+                <h5>Freekeh</h5>
+                <p>Freekeh with meat.</p>
+                <p class="price" onmouseover="increaseFontSize(this)" onmouseout="resetFontSize(this)">5.99 JD</p>
+                <button class="btn" onclick="chooseMeal('meal5-img')">Choose</button>
+            </div>
+            <div class="card">
+                <img src="mnue/kupal.jpg" alt="Meal 6" id="meal6-img">
+                <h5>kibbeh</h5>
+                <p>Fried kibbeh with yoghurt.</p>
+                <p class="price" onmouseover="increaseFontSize(this)" onmouseout="resetFontSize(this)">4 JD</p>
+                <button class="btn" onclick="chooseMeal('meal6-img')">Choose</button>
+            </div>
+            <div class="card">
+                <img src="mnue/maqlupa.jpg" alt="Meal 7" id="meal7-img">
+                <h5>Maqluba</h5>
+                <p>Maqluba rice and vegetables.</p>
+                <p class="price" onmouseover="increaseFontSize(this)" onmouseout="resetFontSize(this)">6 JD</p>
+                <button class="btn" onclick="chooseMeal('meal7-img')">Choose</button>
+            </div>
+            <div class="card">
+                <img src="mnue/molkheya.jpg" alt="Meal 8" id="meal8-img">
+                <h5>Molokhiya </h5>
+                <p>Molokhiya with chicken.</p>
+                <p class="price" onmouseover="increaseFontSize(this)" onmouseout="resetFontSize(this)">8 JD</p>
+                <button class="btn" onclick="chooseMeal('meal8-img')">Choose</button>
+            </div>
+            <div class="card">
+                <img src="mnue/tabula.jpg" alt="Meal 9" id="meal9-img">
+                <h5> Tabbouleh</h5>
+                <p>Fresh vegetable tabbouleh.</p>
+                <p class="price" onmouseover="increaseFontSize(this)" onmouseout="resetFontSize(this)">4 JD</p>
+                <button class="btn" onclick="chooseMeal('meal9-img')">Choose</button>
+            </div>
+        </div>
+    </div>
+ 
+      
+    <footer>
+        <div class="footer-content">
+            <p>Contact us: Arabian Nights@gmail.com</p>
+        </div>
+        <div class="copyright">
+            <p>&copy; 2024 Arabian Nights . All Rights Reserved.</p>
+        </div>
+        
+    </footer>
+     <script>
+        function increaseFontSize(element) {
+            element.style.fontSize = '1.5em';
+        }
+
+        function resetFontSize(element) {
+            element.style.fontSize = '1em';
+        }
+
+        function chooseMeal(imageId) {
+            const img = document.getElementById(imageId);
+            img.src = 'check.webp'; 
+        }
+    </script>
+       <script src="js.js"></script>
+</body>
+</html>

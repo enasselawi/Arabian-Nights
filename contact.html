@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+   <link rel="stylesheet" href="style.css">
+   <title>Contact Us - Arabian Nights Restaurant</title>
+   <style>
+       /* Add your CSS styling here */
+   </style>
+</head>
+<body>
+    <header>
+        <div class="header">
+            <a class="logo">Arabian Nights</a>
+            <nav>
+                <div class="header-right">
+                    <a href="index.html">HOME</a>
+                    <a href="menu.html">MENU</a>
+                    <a href="contact.html">CONTACT US</a>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <div class="container">
+        <h1>Contact Us</h1>
+        <div class="contact-info">
+            <div style="color: white;"><strong>Address:</strong> 123 Arabian Nights St, Irbid City, 12345</div>
+            <div style="color: white;"><strong>Phone:</strong> +962 456 7890</div>
+            <div style="color: white;"><strong>Email:</strong> ArabianNights@arabiannights.com</div>
+        </div>
+        <form id="contactForm" action="/submit_contact_form" method="post">
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+            <input type="submit" value="Send Message">
+        </form>
+        <div id="submissionMessage"></div>
+    </div>
+
+    <footer>
+        <div class="footer-content">
+            <p>Contact us: ArabianNights@gmail.com</p>
+        </div>
+        <div class="copyright">
+            <p>&copy; 2024 Arabian Nights. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const form = document.getElementById("contactForm");
+            const inputs = form.querySelectorAll("input, textarea");
+
+            inputs.forEach(input => {
+                input.addEventListener("change", function() {
+                    this.value = this.value.toUpperCase();
+                    this.style.color = "blue";  
+                });
+            });
+
+            form.addEventListener("submit", function(event) {
+                event.preventDefault();  
+
+                
+                const successMessage = document.createElement("p");
+                successMessage.textContent = "The form has been submitted successfully.";
+                successMessage.style.color = "white"; 
+                successMessage.style.fontSize = "24px";  
+
+             
+                const messageContainer = document.getElementById("submissionMessage");
+                messageContainer.innerHTML = "";
+                messageContainer.appendChild(successMessage);
+            });
+        });
+    </script>
+</body>
+</html>

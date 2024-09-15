@@ -1,0 +1,242 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins',sans-serif;
+    box-sizing: border-box;
+  
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(rgba(54, 54, 95, 0.7), rgba(0, 0, 139, 0.7)), 
+    url('images/BG4.jpg') no-repeat center center fixed;
+    background-size: cover; 
+    font-family: Arial, sans-serif; 
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    padding-top: 70px;
+ 
+}
+
+.container{
+    width: 100%;
+    min-height: 100vh;
+   
+    background-size: cover;
+    background-position: center;
+    padding: 10px 8%;
+}
+
+.content{
+    margin-top: 14%;
+    color: #fff;
+    max-width: 620px;
+    font-weight: bold;
+}
+.content h1 h2{
+    font-size: 70px;
+    font-weight: 600;
+    line-height: 85px;
+    margin-bottom: 25px;
+}
+h1{
+    font-size: 70px;
+    font-weight: 600;
+    line-height: 85px;
+    margin-bottom: 25px; 
+    color:white;
+}
+
+<!-- carousel-->
+
+.carousel {
+    display: flex;
+    overflow: hidden;
+    width: 100%;
+    height: 300px;
+    position: relative;
+}
+
+.carousel img {
+    width: 600px;
+    height: 450px;
+    flex-shrink: 0;
+    transition: transform 0.5s ease-in-out;
+    border-radius: 10px;
+}
+
+.carousel img.hidden {
+    display: none;
+}
+
+.carousel .prev, .carousel .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+}
+
+.carousel .prev {
+    left: 10px;
+}
+
+.carousel .next {
+    right: 10px;
+}
+.carousel-description {
+    margin-top: 100;
+    text-align:justify;
+    margin-bottom: 20px; 
+    font-size: 1.2em;
+    color: #fff; 
+}
+
+ .header {
+    overflow: hidden;
+    background-color:#0c17271a;
+    color: white;
+    padding: 20px 10px;
+    position: fixed;
+    width:100% ;
+      top: 0;
+      left: 0;
+      z-index: 1000; 
+      box-shadow: 0 2px 5px rgba(0,0,0,0.2); 
+      
+  }
+  
+  .header a {
+    float: left;
+    color: white;
+    text-align: center;
+    padding: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 25px;
+    border-radius: 4px;
+   font-family: 'Arial Narrow', Arial, sans-serif;
+   font-weight: bold;
+   
+   
+  }
+  nav {
+    text-align: center;
+  }
+  nav a {
+    margin: 0 10px;
+    color: white;
+    text-decoration: none;
+  }
+  
+.header a.logo {
+    font-size: 25px;
+    font-weight: bold;
+    color: white;
+   
+  }
+  
+
+  .header-right {
+    float: right;
+   
+  }
+
+  footer {
+    overflow: hidden;
+    width: 100%;
+    background-color:#0c17271a;
+    padding: 7px 0px;
+    text-align: center ;
+    width:100% ;
+      top: 0;
+      left: 0;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    margin-top: 20px; 
+    margin-bottom: auto;
+    color: white ;
+   
+  
+   
+  }
+  
+  .card {
+    background-color: rgba(54, 54, 95, 0.7);
+    color: white;
+    width: 30%;
+    margin-bottom: 20px;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+.card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+.price {
+    font-size: 1rem;
+}
+.btn {
+    background-color: rgba(0, 0, 139, 0.7);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+.btn:hover {
+    background-color: rgba(0, 0, 139, 1);
+}
+
+main {
+    padding: 2em;
+}
+
+.contact-info, .contact-form {
+    margin: 2em 0;
+}
+
+label {
+    display: block;
+    margin-top: 1em;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 0.5em;
+    margin-top: 0.5em;
+}
+
+button {
+    display: block;
+    margin-top: 1em;
+    padding: 0.5em 2em;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #555;
+}
+
+
+
+
+
+
+
+
+
